@@ -1,4 +1,4 @@
-package romannumerals;
+package numerals.conversion;
 
 public class RomanNumeral implements Convertable {
 
