@@ -1,6 +1,6 @@
 package numerals.conversion;
 
-public class RomanNumeral implements Convertable {
+public class RomanNumeral extends Numeral implements Convertable {
 
     private final String romanNumeral;
 
@@ -77,4 +77,11 @@ public class RomanNumeral implements Convertable {
     public String getRomanNumeral() {
         return romanNumeral;
     }
+
+    @Override
+    public Numerals getNumeralType() {
+        return Numerals.ROMAN;
+    }
+
+
 }

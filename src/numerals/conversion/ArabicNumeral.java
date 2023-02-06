@@ -1,6 +1,6 @@
 package numerals.conversion;
 
-public class ArabicNumeral implements Convertable {
+public class ArabicNumeral extends Numeral implements Convertable {
 
     private static final int MAX_ROMAN_NUMERAL = 3999;
 
@@ -60,5 +60,19 @@ public class ArabicNumeral implements Convertable {
             }
         }
         return result.toString();
+    }
+
+    @Override
+    public int getArabicNumeral() {
+        return arabicNumeral;
+    }
+
+    public String getRomanNumeral() {
+        return convert();
+    }
+
+    @Override
+    public Numerals getNumeralType() {
+        return Numerals.ARABIC;
     }
 }
